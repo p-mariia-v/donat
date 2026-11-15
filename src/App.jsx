@@ -8,7 +8,7 @@ import { data } from "./data/data.js";
 
 function App() {
   const [count, setCount] = useState(0);
-  const width = 400;
+  const width = 600;
   const height = 400;
 
   return (
@@ -21,9 +21,9 @@ function App() {
         minHeight: "100vh",
       }}
     >
-      <h1>My first Pie chart</h1>
+      <h1>My first Pie and Donat charts</h1>
       <PieChart data={data} width={width} height={height} inRadius={0} />
-      <PieChart data={data} width={width} height={height} inRadius={150} />
+      <PieChart data={data} width={width} height={height} inRadius={100} />
     </div>
   );
 }
